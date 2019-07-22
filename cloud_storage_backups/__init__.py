@@ -81,10 +81,10 @@ class GoogleCloudStorage(object):
 
 def check_file_exists(filepath):
     if os.path.isfile(filepath):
-        log.debug(f'config_file_path {filepath} is a file.')
+        log.debug(f'filepath {filepath} is a file.')
         return True
     else:
-        log.error(f'config_file_path {filepath} is not a file.')
+        log.error(f'filepath {filepath} is not a file.')
     return False
 
 
